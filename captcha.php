@@ -43,7 +43,7 @@ for($i=0;$i < $let_amount;$i++)      //то же самое для основн�
  
 $cod = implode("",$cod);                    //переводим код в строку
  session_start();
- $_SESSION['code']=$cod;
+ $_SESSION['captcha']=$cod;
 header ("Content-type: image/gif");         //выводим готовую картинку
 imagegif($src); 
 ?>
